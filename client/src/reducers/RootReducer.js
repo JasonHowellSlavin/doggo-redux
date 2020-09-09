@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import counterReducer from './CounterReducer';
-import wordPickerReducer from './WordPickerReducer';
+import cardReducer from './CardReducer';
 
 export default combineReducers({
     counterReducer,
-    wordPickerReducer
+    cardReducer,
 });
