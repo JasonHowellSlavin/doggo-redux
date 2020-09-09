@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Card.scss';
 import { connect } from 'react-redux';
 import { update } from '../../actions/CardActions'; 
+import Settings from '../Settings/Settings';
 
 class Card extends Component{
     constructor(props) {
@@ -20,7 +21,7 @@ class Card extends Component{
                 <h2>{this.props.title}</h2>
                 <p>{this.props.description}</p>
                 <div>
-                    <p>Settings</p>
+                    <Settings />
                 </div>
             </section>
         )
