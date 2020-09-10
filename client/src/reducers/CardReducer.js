@@ -10,7 +10,7 @@ export default function counterReducer(state = cardState, action) {
     switch(action.type) {
         case UPDATE:
             let newState = {...state};
-            newState[action.field] = action.text;
+            action.text !== '' ? newState[action.field] = action.text : newState[action.field] = newState[action.field];
 
             return {
                 ...newState
